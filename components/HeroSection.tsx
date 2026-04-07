@@ -94,9 +94,8 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="font-heading text-4xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight mb-8 max-w-5xl"
+          className="font-heading text-6xl md:text-8xl lg:text-9xl leading-[1.05] tracking-tight mb-8"
         >
-          <span className="text-white">A generational buying opportunity in America&apos;s most productive basins,</span>{" "}
           <span
             style={{
               background: "linear-gradient(135deg, #F0D060, #C9A84C, #D4AF37)",
@@ -105,7 +104,7 @@ export default function HeroSection() {
               backgroundClip: "text",
             }}
           >
-            structured for current income and meaningful tax advantage.
+            JDI Energy Partners
           </span>
         </motion.h1>
 
