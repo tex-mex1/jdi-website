@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
     //    EMAIL_SERVER_USER, EMAIL_SERVER_PASSWORD, EMAIL_FROM
     // 3. Uncomment the nodemailer integration below
     //
-    // Example integration (server-side only — credentials never reach the browser):
+    // Example integration (server-side only; credentials never reach the browser):
     // if (emailHost && emailUser && emailPass) {
     //   const nodemailer = require("nodemailer");
     //   const transporter = nodemailer.createTransport({

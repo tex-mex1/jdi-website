@@ -25,7 +25,7 @@ const theses = [
     title: "Infrastructure Assets",
     subtitle: "Long-Term Stable Cash Flows",
     description:
-      "Essential energy infrastructure — pipelines, terminals, transmission networks, and distribution systems — provides inflation-protected, contractually secured revenue streams. We target assets with natural monopoly characteristics, high barriers to entry, and multi-decade operating lives with limited capital reinvestment requirements.",
+      "Essential energy infrastructure, including pipelines, terminals, transmission networks, and distribution systems, provides inflation-protected, contractually secured revenue streams. We target assets with natural monopoly characteristics, high barriers to entry, and multi-decade operating lives with limited capital reinvestment requirements.",
     highlights: [
       "Midstream pipelines",
       "LNG terminals & storage",

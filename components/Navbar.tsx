@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/#home", label: "Home" },
@@ -37,21 +38,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#C9A84C] to-[#D4AF37] flex items-center justify-center shadow-[0_0_20px_rgba(201,168,76,0.4)] group-hover:shadow-[0_0_30px_rgba(201,168,76,0.6)] transition-all duration-300">
-                <Zap className="w-5 h-5 text-[#0A0E1A]" strokeWidth={2.5} />
-              </div>
-              <div className="absolute inset-0 rounded-lg bg-[#C9A84C]/20 blur-md group-hover:blur-lg transition-all duration-300" />
-            </div>
-            <div>
-              <div className="text-white font-bold text-lg leading-none tracking-wide">
-                JDI Energy
-              </div>
-              <div className="text-[#C9A84C] text-xs tracking-[0.2em] uppercase">
-                Partners
-              </div>
-            </div>
+          <Link href="/" className="flex items-center group">
+            <Image
+              src="/jdi-logo.png"
+              alt="JDI Energy Partners"
+              width={180}
+              height={60}
+              className="h-12 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}

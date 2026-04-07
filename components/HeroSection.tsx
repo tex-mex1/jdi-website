@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, ChevronDown, TrendingUp } from "lucide-react";
@@ -8,7 +7,6 @@ import { ArrowRight, ChevronDown, TrendingUp } from "lucide-react";
 function AnimatedGridBackground() {
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {/* Grid lines */}
       <svg
         className="absolute inset-0 w-full h-full opacity-20"
         xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +34,6 @@ function AnimatedGridBackground() {
         <rect width="100%" height="100%" fill="url(#fade)" />
       </svg>
 
-      {/* Glow orbs */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#C9A84C]/5 rounded-full blur-3xl animate-pulse" />
       <div
         className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-[#C9A84C]/3 rounded-full blur-3xl animate-pulse"
@@ -56,17 +53,17 @@ function FloatingParticles() {
           key={i}
           className="absolute w-1 h-1 bg-[#C9A84C] rounded-full"
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
+            left: `${(i * 17 + 5) % 100}%`,
+            top: `${(i * 23 + 10) % 100}%`,
           }}
           animate={{
             y: [0, -30, 0],
             opacity: [0, 0.6, 0],
           }}
           transition={{
-            duration: 3 + Math.random() * 4,
+            duration: 3 + (i % 4),
             repeat: Infinity,
-            delay: Math.random() * 5,
+            delay: (i % 5),
             ease: "easeInOut",
           }}
         />
@@ -126,7 +123,7 @@ export default function HeroSection() {
           className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed"
         >
           JDI Energy Partners delivers institutional-grade returns through
-          strategic energy sector investments — built on a foundation of deep
+          strategic energy sector investments, built on a foundation of deep
           expertise, rigorous analysis, and disciplined capital deployment.
         </motion.p>
 
@@ -150,42 +147,6 @@ export default function HeroSection() {
           >
             Learn More
           </Link>
-        </motion.div>
-
-        {/* Stats preview */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-16"
-        >
-          {[
-            { label: "AUM", value: "$2.4B+", sub: "Assets Under Management" },
-            { label: "Returns", value: "18.7%", sub: "Annual Return (Net)" },
-            { label: "Experience", value: "12+", sub: "Years of Operation" },
-            { label: "Portfolio", value: "47", sub: "Portfolio Companies" },
-          ].map((stat, i) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
-              className="glass-card p-4 text-center gold-glow"
-            >
-              <div
-                className="text-2xl font-bold mb-1"
-                style={{
-                  background: "linear-gradient(135deg, #F0D060, #C9A84C)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
-                }}
-              >
-                {stat.value}
-              </div>
-              <div className="text-gray-500 text-xs">{stat.sub}</div>
-            </motion.div>
-          ))}
         </motion.div>
 
         {/* Scroll indicator */}
