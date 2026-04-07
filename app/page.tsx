@@ -1,20 +1,20 @@
 import HeroSection from "@/components/HeroSection";
-import StatsBar from "@/components/StatsBar";
-import PerformanceSection from "@/components/PerformanceSection";
-import FundDetailsSection from "@/components/FundDetailsSection";
-import InvestmentThesisSection from "@/components/InvestmentThesisSection";
-import DocumentsSection from "@/components/DocumentsSection";
+import AboutSection from "@/components/AboutSection";
+import InvestmentStrategySection from "@/components/InvestmentStrategySection";
+import WhyInvestSection from "@/components/WhyInvestSection";
+import TaxBenefitSection from "@/components/TaxBenefitSection";
+import LeadershipSection from "@/components/LeadershipSection";
 import ContactSection from "@/components/ContactSection";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <StatsBar />
-      <PerformanceSection />
-      <FundDetailsSection />
-      <InvestmentThesisSection />
-      <DocumentsSection />
+      <AboutSection />
+      <InvestmentStrategySection />
+      <WhyInvestSection />
+      <TaxBenefitSection />
+      <LeadershipSection />
       <ContactSection />
     </>
   );

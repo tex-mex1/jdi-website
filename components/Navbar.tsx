@@ -7,10 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { href: "/#home", label: "Home" },
-  { href: "/#fund", label: "Fund" },
-  { href: "/#performance", label: "Performance" },
-  { href: "/#documents", label: "Documents" },
+  { href: "/#about", label: "About" },
+  { href: "/#strategy", label: "Strategy" },
+  { href: "/#why", label: "Why JDI" },
+  { href: "/#tax", label: "Tax Benefits" },
+  { href: "/#leadership", label: "Leadership" },
   { href: "/#contact", label: "Contact" },
 ];
 
@@ -50,12 +51,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-300 hover:text-[#C9A84C] text-sm font-medium tracking-wide transition-colors duration-200 relative group"
+                className="font-body text-gray-300 hover:text-[#C9A84C] text-sm tracking-wide transition-colors duration-200 relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#C9A84C] group-hover:w-full transition-all duration-300" />
@@ -66,10 +67,10 @@ export default function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <Link
-              href="/login"
-              className="relative px-5 py-2.5 rounded-lg text-sm font-semibold text-[#0A0E1A] bg-gradient-to-r from-[#C9A84C] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#F0D060] transition-all duration-200 shadow-[0_0_20px_rgba(201,168,76,0.3)] hover:shadow-[0_0_30px_rgba(201,168,76,0.5)] tracking-wide"
+              href="/#contact"
+              className="font-body relative px-5 py-2.5 rounded-lg text-sm font-semibold text-[#0A0E1A] bg-gradient-to-r from-[#C9A84C] to-[#D4AF37] hover:from-[#D4AF37] hover:to-[#F0D060] transition-all duration-200 shadow-[0_0_20px_rgba(201,168,76,0.3)] hover:shadow-[0_0_30px_rgba(201,168,76,0.5)] tracking-wide"
             >
-              Investor Login
+              Request Information
             </Link>
           </div>
 
@@ -98,18 +99,18 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block text-gray-300 hover:text-[#C9A84C] font-medium py-2 transition-colors"
+                  className="block font-body text-gray-300 hover:text-[#C9A84C] py-2 transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
               <Link
-                href="/login"
-                className="block w-full text-center px-5 py-3 rounded-lg text-sm font-semibold text-[#0A0E1A] bg-gradient-to-r from-[#C9A84C] to-[#D4AF37] mt-4"
+                href="/#contact"
+                className="block w-full text-center px-5 py-3 rounded-lg text-sm font-semibold text-[#0A0E1A] bg-gradient-to-r from-[#C9A84C] to-[#D4AF37] mt-4 font-body"
                 onClick={() => setMenuOpen(false)}
               >
-                Investor Login
+                Request Information
               </Link>
             </div>
           </motion.div>
