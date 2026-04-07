@@ -8,21 +8,18 @@ const leaders = [
     initials: "ZC",
     name: "Zachary Capra",
     role: "Managing Member",
-    entity: "Cornerstone Energy Capital LLC",
     bio: "Internal counsel and managing member of JDI Energy Partners LLC. Responsible for fund governance, securities compliance, investor relations, and regulatory oversight. Licensed attorney barred in Arizona and Texas with national energy and securities experience.",
   },
   {
     initials: "JV",
     name: "Justin Vakilzadeh",
     role: "Principal, OpCo",
-    entity: "Basalt Capital LLC",
     bio: "Co-founder of the Fund's operating company. Leads deal sourcing, operator relationship management, technical evaluation, and asset management across Oklahoma and Texas basins. Drives capital formation and investor development strategy.",
   },
   {
     initials: "RB",
     name: "Ryan Bucknam",
     role: "Principal, OpCo",
-    entity: "Verde Mesa Holdings LLC",
     bio: "Co-founder of the Fund's operating company. Oversees deal execution, drilling program evaluation, production performance tracking, and midstream infrastructure assessment. Manages field-level operator coordination and technical diligence.",
   },
 ];
@@ -67,9 +64,7 @@ export default function LeadershipSection() {
             >
               {/* Avatar */}
               <div className="flex items-center gap-4 mb-6">
-                <div
-                  className="w-16 h-16 rounded-full bg-[#0A0E1A] border-2 border-[#C9A84C]/40 flex items-center justify-center flex-shrink-0"
-                >
+                <div className="w-16 h-16 rounded-full bg-[#0A0E1A] border-2 border-[#C9A84C]/40 flex items-center justify-center flex-shrink-0">
                   <span
                     className="font-heading text-xl"
                     style={{
@@ -85,7 +80,6 @@ export default function LeadershipSection() {
                 <div>
                   <h3 className="font-heading text-xl text-white leading-tight">{leader.name}</h3>
                   <p className="font-body text-[#C9A84C] text-sm mt-0.5">{leader.role}</p>
-                  <p className="font-body text-gray-500 text-xs mt-0.5">{leader.entity}</p>
                 </div>
               </div>
 

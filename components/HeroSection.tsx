@@ -87,18 +87,7 @@ export default function HeroSection() {
       <FloatingParticles />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-24 pb-16 flex-1 flex flex-col items-center justify-center">
-        {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C9A84C]/10 border border-[#C9A84C]/30 text-[#C9A84C] text-sm mb-8"
-          style={{ fontFamily: "var(--font-eb-garamond), Georgia, serif" }}
-        >
-          <TrendingUp className="w-4 h-4" />
-          <span>Non-Operated Oil &amp; Gas Income Fund</span>
-          <span className="w-2 h-2 rounded-full bg-[#C9A84C] animate-pulse" />
-        </motion.div>
+
 
         {/* Headline */}
         <motion.h1

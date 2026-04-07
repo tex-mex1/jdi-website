@@ -45,7 +45,7 @@ export default function Navbar() {
               alt="JDI Energy Partners"
               width={180}
               height={60}
-              className="h-12 w-auto object-contain"
+              className="h-36 w-auto object-contain"
               priority
             />
           </Link>
