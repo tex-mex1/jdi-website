@@ -67,12 +67,12 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <Mail className="w-4 h-4 text-[#C9A84C] mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-gray-400 text-sm">Investor Relations</p>
+                  <p className="text-gray-400 text-sm">Contact Us</p>
                   <a
-                    href="mailto:ir@jdienergypartners.com"
+                    href="mailto:zach@jdiep.com"
                     className="text-gray-500 text-sm hover:text-[#C9A84C] transition-colors"
                   >
-                    ir@jdienergypartners.com
+                    zach@jdiep.com
                   </a>
                 </div>
               </div>
